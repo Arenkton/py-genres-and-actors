@@ -6,8 +6,8 @@ from django.db.models import QuerySet
 def main() -> QuerySet:
     from db.models import Genre, Actor
 
-    geners = ["Western", "Action", "Dramma"]
-    for gener in geners:
+    genrs = ["Western", "Action", "Dramma"]
+    for gener in genrs:
         Genre.objects.create(name=gener)
 
     actors = [("George", "Klooney"),
